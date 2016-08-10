@@ -5,6 +5,8 @@ const {Tabs,
 const TitleBar = require('./TitleBar.jsx');
 const UserProfileBar = require('./UserProfileBar.jsx');
 const SearchBar = require('./SearchBar.jsx');
+const ImageGallery = require('./ImageGallery.jsx');
+const UserNotifications = require('./UserNotifications.jsx');
 const SocialMediaBar = require('./SocialMediaBar.jsx');
 
 const MobileContainer = React.createClass({
@@ -16,7 +18,6 @@ const MobileContainer = React.createClass({
       marginBottom: 0,
       borderBottom: 0,
       backgroundColor: '#656565',
-      whiteSpace: 'nowrap'
     };
     const homePhotoStyle={
       maxWidth: '100%',
@@ -34,7 +35,8 @@ const MobileContainer = React.createClass({
               <Tab className="icon-home-outline"></Tab>
               <Tab className="icon-search"></Tab>
               <Tab className="icon-bell"></Tab>
-              <Tab className="icon-camera"></Tab>
+              {// <Tab className="icon-camera"></Tab>
+              }
             </TabList>
 
             <TabPanel className="user-tab">
@@ -44,19 +46,18 @@ const MobileContainer = React.createClass({
             </TabPanel>
             <TabPanel className="user-tab">
               <SearchBar />
-              <h2>IMAGE</h2>
-              <SocialMediaBar />
+              <ImageGallery />
             </TabPanel>
             <TabPanel className="user-tab">
               <UserProfileBar />
-              <h2>IMAGE</h2>
-              <SocialMediaBar />
+              <UserNotifications />
             </TabPanel>
-            <TabPanel className="user-tab">
-              <UserProfileBar />
-              <h2>IMAGE</h2>
-              <SocialMediaBar />
-            </TabPanel>
+            {// <TabPanel className="user-tab">
+              //   <UserProfileBar />
+              //   <h2>IMAGE</h2>
+              //   <SocialMediaBar />
+              // </TabPanel>
+            }
 
           </Tabs>
 

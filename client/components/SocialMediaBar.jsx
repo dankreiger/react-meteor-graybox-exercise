@@ -41,6 +41,28 @@ var SocialMediaBar = React.createClass({
       flex: '1 auto',
       width: '10%'
     };
+    const streamCellStyle={
+      flex: '1 auto',
+      width: '65%',
+      marginTop: 30,
+      marginLeft: 10
+    };
+    const streamStyle={
+      border: '1px solid #b2b2b2',
+      backgroundColor: '#d3d3d3',
+      padding: 10,
+      fontSize: '1em',
+      borderTopRightRadius: '15%',
+      borderBottomRightRadius: '15%',
+      borderBottomLeftRadius: '15%'
+    };
+    const instagramLogoCellStyle={
+      flex: '1 auto',
+      marginTop: 20
+    };
+    const instagramLogoStyle={
+
+    };
     return (
       <div>
         <div className="social-media-bar" style={socialMediaBarStyle}>
@@ -63,6 +85,12 @@ var SocialMediaBar = React.createClass({
             <a href="#" className="icon-camera-alt"></a>
           </div>
 
+          <div className="comment" style={streamCellStyle}>
+            <a href="#" style={streamStyle}>Wauwau!</a>
+          </div>
+          <div className="instagramLogo" style={instagramLogoCellStyle}>
+            <a href="#" style={instagramLogoStyle}><img src="images/instagram_circle.png" /></a>
+          </div>
         </div>
       </div>
     );

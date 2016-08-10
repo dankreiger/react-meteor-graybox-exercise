@@ -20,7 +20,7 @@ a.brand:hover, a.circle:hover {
 	flex-direction: column;
 	flex: 1 100%;;
 	min-height: 95vh;
-	width: 60vh;
+	width: 53vh;
 	/*background-color: #333333;*/
 	-webkit-box-shadow: 10px 9px 9px 0px rgba(198,198,198,1);
 	-moz-box-shadow: 10px 9px 9px 0px rgba(198,198,198,1);
@@ -93,13 +93,24 @@ a.brand:hover {
 	height: 13vh;
 }
 
-
+/*
 
 @media only screen and (max-width: 440px){
+	body {
+		margin: 0;
+	}
+
+	.container {
+		min-height: 55vh;
+		width: auto;
+	}
 	.brand {
 		font-size: 16px;
 	}
 	.react-tabs [role=tab] {
 		padding: 1.7em 1.7em;
 	}
-}
+	.social-media-bar {
+		width: 75%;
+	}
+}*/

@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import MobileContainer from './components/mobile_container';
+import MobileContainer from './components/MobileContainer.jsx';
 
 const App = () => {
   return (

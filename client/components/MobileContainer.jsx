@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+const React = require('react');
+const ReactDom = require('react-dom');
+const {Tabs,
+    TabList, Tab, TabPanel} = require('react-tabs');
+const TitleBar = require('./TitleBar.jsx')
 
-
-class MobileContainer extends React.Component {
+const MobileContainer = React.createClass({
   handleSelect(index, last) {
     console.log('Selected tab: ' + index + ', Last tab: ' + last);
-  }
-  render () {
+  },
+  render: function() {
     const tabsListStyle = {
       marginBottom: 0,
       borderBottom: 0
@@ -15,13 +16,14 @@ class MobileContainer extends React.Component {
     const userPhotoStyle={
       backgroundColor: '#222222',
     };
+    const homePhotoStyle={
+      width: '100%',
+      height: 'auto'
+    };
     return (
       <div>
         <div>
-          <div className="title">
-            <a className="brand" href="#">Instagram</a>
-          <div className="circle"></div>
-          </div>
+          <TitleBar />
           <Tabs
             onSelect={this.handleSelect}
             selectedIndex={2}
@@ -37,7 +39,7 @@ class MobileContainer extends React.Component {
 
             <TabPanel className="user-photo" style={userPhotoStyle}>
               <div className="user-info"></div>
-              <h2>IMAGE</h2>
+              <img src="images/golden_pup.png" style={homePhotoStyle}/>
               <div className="footer"></div>
             </TabPanel>
             <TabPanel className="user-photo" style={userPhotoStyle}>
@@ -61,10 +63,9 @@ class MobileContainer extends React.Component {
         </div>
 
     </div>
-
     );
-
   }
-}
 
-export default MobileContainer;
+});
+
+module.exports = MobileContainer;

@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = React.PropTypes;
 
 var TitleBar = React.createClass({
 
@@ -7,7 +8,7 @@ var TitleBar = React.createClass({
       <div>
         <div className="title">
           <a className="brand" href="#">Instagram</a>
-          <div className="circle"></div>
+          <a className="circle" href="#"></a>
         </div>
       </div>
     );

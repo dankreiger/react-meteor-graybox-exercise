@@ -2,22 +2,23 @@ const React = require('react');
 const ReactDom = require('react-dom');
 const {Tabs,
     TabList, Tab, TabPanel} = require('react-tabs');
-const TitleBar = require('./TitleBar.jsx')
+const TitleBar = require('./TitleBar.jsx');
+const UserProfileBar = require('./UserProfileBar.jsx');
+const SocialMediaBar = require('./SocialMediaBar.jsx');
 
 const MobileContainer = React.createClass({
   handleSelect(index, last) {
     console.log('Selected tab: ' + index + ', Last tab: ' + last);
   },
   render: function() {
-    const tabsListStyle = {
+    const tabsListStyle={
       marginBottom: 0,
-      borderBottom: 0
-    };
-    const userPhotoStyle={
-      backgroundColor: '#222222',
+      borderBottom: 0,
+      backgroundColor: '#555555',
+      whiteSpace: 'nowrap'
     };
     const homePhotoStyle={
-      width: '100%',
+      maxWidth: '100%',
       height: 'auto'
     };
     return (
@@ -35,27 +36,25 @@ const MobileContainer = React.createClass({
               <Tab className="icon-camera"></Tab>
             </TabList>
 
-
-
-            <TabPanel className="user-photo" style={userPhotoStyle}>
-              <div className="user-info"></div>
+            <TabPanel className="user-tab">
+              <UserProfileBar />
               <img src="images/golden_pup.png" style={homePhotoStyle}/>
-              <div className="footer"></div>
+              <SocialMediaBar />
             </TabPanel>
-            <TabPanel className="user-photo" style={userPhotoStyle}>
-              <div className="user-info"></div>
+            <TabPanel className="user-tab">
+              <UserProfileBar />
               <h2>IMAGE</h2>
-              <div className="footer"></div>
+              <SocialMediaBar />
             </TabPanel>
-            <TabPanel className="user-photo" style={userPhotoStyle}>
-              <div className="user-info"></div>
+            <TabPanel className="user-tab">
+              <UserProfileBar />
               <h2>IMAGE</h2>
-              <div className="footer"></div>
+              <SocialMediaBar />
             </TabPanel>
-            <TabPanel className="user-photo" style={userPhotoStyle}>
-              <div className="user-info"></div>
+            <TabPanel className="user-tab">
+              <UserProfileBar />
               <h2>IMAGE</h2>
-              <div className="footer"></div>
+              <SocialMediaBar />
             </TabPanel>
 
           </Tabs>

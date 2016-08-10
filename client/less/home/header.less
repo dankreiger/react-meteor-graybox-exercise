@@ -1,0 +1,43 @@
+@import "../utils/variables.less";
+
+.title {
+	background-color: @gray_0;
+	position: relative;
+	a {
+		.link();
+		line-height: 45px;
+		margin-left: 12px;
+	}
+	.circle {
+		background-color: @white;
+		height: 16px;
+		width: 16px;
+		border-radius: 100%;
+		position: absolute;
+		right: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		margin-right: 12px;
+	}
+}
+
+nav {
+	background-color: @gray_0;
+	white-space: nowrap;
+	line-height: 45px;
+	.icon {
+		display: inline-block;
+		width: 25%;
+		text-align: center;
+		a {
+			.link();
+			line-height: 16px;
+		}
+	}
+}
+
+.user-info {
+	height: 68px;
+	background-color: @white;
+}

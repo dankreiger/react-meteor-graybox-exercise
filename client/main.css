@@ -2,7 +2,7 @@ body {
 	background-color: #e9ebee;
 }
 
-a.brand:hover, a.circle:hover {
+a.brand:hover, a.circle:hover, .react-tabs ul li:hover, .social-media-bar a:hover, .user-info a:hover {
 	-moz-transition: all .2s ease-in;
 	-o-transition: all .2s ease-in;
 	-webkit-transition: all .2s ease-in;
@@ -74,10 +74,18 @@ a.brand:hover {
 	text-align: center;
 }
 
+.react-tabs ul li:hover {
+	color: #383b38;
+}
 
-.user-info {
-	height: 12vh;
+
+.user-info, .search-bar {
+	height: 11.5vh;
 	background-color: #ffffff;
+}
+
+.user-info a:hover {
+	color: #545454;
 }
 
 .user-tab {
@@ -93,24 +101,47 @@ a.brand:hover {
 	height: 13vh;
 }
 
-/*
+.social-media-bar a {
+	text-decoration: none;
+	color: #898989;
+}
 
-@media only screen and (max-width: 440px){
-	body {
-		margin: 0;
-	}
+.social-media-bar a:hover {
+	color: #999999;
+}
 
-	.container {
-		min-height: 55vh;
-		width: auto;
-	}
-	.brand {
-		font-size: 16px;
-	}
-	.react-tabs [role=tab] {
-		padding: 1.7em 1.7em;
-	}
-	.social-media-bar {
-		width: 75%;
-	}
-}*/
+.social-media-bar p a {
+	color: inherit;
+}
+
+.social-media-bar p a:hover {
+	color: #444444;
+}
+
+
+
+input {
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 1em;
+	background: url(images/search_icon.png) no-repeat scroll 19% 53%;
+	padding-left:15px;
+	text-align: center;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1.1em;
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1.1em;
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1.1em;
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 1.1em;
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}

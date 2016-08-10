@@ -8,7 +8,8 @@ var SocialMediaBar = React.createClass({
       width: '100%',
       display: 'flex',
       flexWrap: 'wrap',
-      alignItems: 'flex-start'
+      alignItems: 'flex-start',
+      paddingTop: '3%'
     };
     const heatIconCellStyle={
       flex: '1 auto',
@@ -44,22 +45,22 @@ var SocialMediaBar = React.createClass({
       <div>
         <div className="social-media-bar" style={socialMediaBarStyle}>
           <div className="heatIconCell" style={heatIconCellStyle}>
-            <div className="icon-heart"></div>
+            <a href="#" className="icon-heart"></a>
           </div>
           <div className="likeCountCell" style={likeCountCellStyle}>
-            <p style={likeStyles}>112 Likes</p>
+            <p style={likeStyles}><a href="#">112 Likes</a></p>
           </div>
           <div className="likeCell" style={likeCellStyle}>
-            <div className="icon-heart-empty"></div>
+            <a href="#" className="icon-heart-empty"></a>
           </div>
           <div className="commentCell" style={commentCellStyle}>
-            <div className="icon-share"></div>
+            <a href="#" className="icon-share"></a>
           </div>
           <div className="slideShowCell" style={slideShowCellStyle}>
-            <div className="icon-play"></div>
+            <a href="#" className="icon-play"></a>
           </div>
           <div className="shareCell" style={shareCellStyle}>
-            <div className="icon-camera-alt"></div>
+            <a href="#" className="icon-camera-alt"></a>
           </div>
 
         </div>

@@ -4,6 +4,7 @@ const {Tabs,
     TabList, Tab, TabPanel} = require('react-tabs');
 const TitleBar = require('./TitleBar.jsx');
 const UserProfileBar = require('./UserProfileBar.jsx');
+const SearchBar = require('./SearchBar.jsx');
 const SocialMediaBar = require('./SocialMediaBar.jsx');
 
 const MobileContainer = React.createClass({
@@ -38,11 +39,11 @@ const MobileContainer = React.createClass({
 
             <TabPanel className="user-tab">
               <UserProfileBar />
-              <img src="images/golden_pup.png" style={homePhotoStyle}/>
+              <a href="#"><img src="images/golden_pup.png" style={homePhotoStyle}/></a>
               <SocialMediaBar />
             </TabPanel>
             <TabPanel className="user-tab">
-              <UserProfileBar />
+              <SearchBar />
               <h2>IMAGE</h2>
               <SocialMediaBar />
             </TabPanel>

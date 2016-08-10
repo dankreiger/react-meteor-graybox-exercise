@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 
+
 var SearchBar = React.createClass({
 
     render: function() {
@@ -26,7 +27,13 @@ var SearchBar = React.createClass({
         <div>
           <div className="search-bar" style={searchBarStyle}>
             <div className="searchBarCell" style={searchBarCellStyle}>
-              <input placeholder="Search Instagram" style={searchBarInputStyle}></input>
+              <form>
+                <input
+                  placeholder="Search Instagram"
+                  type="text"
+                  style={searchBarInputStyle}
+                />
+              </form>
             </div>
           </div>
         </div>

@@ -2,6 +2,13 @@ body {
 	background-color: #e9ebee;
 }
 
+a.brand:hover, a.circle:hover {
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
 .container {
 	display: -webkit-box;
   display: -moz-box;
@@ -21,7 +28,7 @@ body {
 }
 
 .title {
-	background-color: #555555;
+	background-color: #656565;
 	position: relative;
 }
 
@@ -34,7 +41,7 @@ a.brand {
 	margin-left: 12px;
 }
 
-a.brand:hover, a.circle:hover {
+a.brand:hover {
 	color: #efefef;
 }
 
@@ -50,6 +57,10 @@ a.brand:hover, a.circle:hover {
 	bottom: 0;
 	margin: auto;
 	margin-right: 12px;
+}
+
+.circle:hover {
+	background-color: #efefef;
 }
 
 

@@ -14,7 +14,7 @@ const MobileContainer = React.createClass({
     const tabsListStyle={
       marginBottom: 0,
       borderBottom: 0,
-      backgroundColor: '#555555',
+      backgroundColor: '#656565',
       whiteSpace: 'nowrap'
     };
     const homePhotoStyle={

@@ -1,3 +1,10 @@
-## Greybox Design Exercise 2 (with React.js)
+## Greybox Design Exercise 2 (with React.js and Meteor)
 
-- A live version is available on Heroku: [https://rmgb.herokuapp.com/](https://rmgb.herokuapp.com/)</a>
+ ![](https://david-dm.org/dankreiger/react-meteor-graybox-exercise.svg)
+
+ ***
+
+ [![](https://i.imgflip.com/1aao21.gif "made at imgflip.com")](https://imgflip.com/gif/1aao21)
+
+
+###### A [live version](https://rmgb.herokuapp.com/) is available on Heroku.

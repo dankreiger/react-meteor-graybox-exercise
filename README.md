@@ -3,7 +3,7 @@
  ![](https://david-dm.org/dankreiger/react-meteor-graybox-exercise.svg)
 
 
-    [![](https://i.imgflip.com/1aao21.gif "wauwauwau")](https://rmgb.herokuapp.com/)
+ [![](https://i.imgflip.com/1aao21.gif "wauwauwau")](https://rmgb.herokuapp.com/)
 
 ***
 
